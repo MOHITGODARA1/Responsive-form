@@ -1,0 +1,193 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.container{
+   display: flex;
+   height: 100vh;
+   width: 100vw;
+   background-color: rgba(43, 62, 56, 0.536);
+   justify-content: center;
+   align-items: center;
+}
+.profile-photo{
+   display: flex;
+   justify-content: center;
+}
+.profileimage{
+   height: 100px;
+   width: 100px;
+   border-radius: 50%;
+   bottom: -54px;
+    left: 40%;
+    z-index: 1;
+}
+.main_form_div{
+   width: 400px;
+   height: 45%;
+}
+.position{
+   height: 100%;
+   position: relative;
+   top: -49px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+.upper-section{
+   bottom: 49px;
+   background-color: rgba(127, 255, 212, 0.207);
+   border-radius: 10px;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
+   flex-direction: column;
+}
+.image{
+   height: 40px;
+   width: 40px;
+}
+.email-icon{
+   display: inline-block;
+   height: 50px;
+   width: 84%;
+}
+#email-icon-section{
+   height: 40px;
+   width: 40px;
+}
+#email-icon-div{
+   width: 50px;
+   background-color: #DBDBDB;
+   border-right: 1px solid black;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.email-section{
+   display: flex;
+   align-items: center;
+   margin-top: 80px;
+}
+.password-icon{
+   height: 50px;
+   display: inline-block;
+   width: 84%;
+}
+.password-section{
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+}
+
+.inputsection{
+   padding-left: 5px;
+   font-size: 21px;
+   background-color: #DBDBDB;
+   border-radius: 0px;
+   width: 100%;
+   border-style: none;
+   outline: none;
+   height: 50px;
+   border-bottom-right-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.forget-div{
+   margin-top: 9px;
+   width: 80%;
+   display: flex;
+   justify-content: end;
+}
+.singup{
+   height: 60px;
+   display: flex;
+   align-items:end ;
+   justify-content: start;
+   width: 95%;
+  
+}
+.SingUp{
+   font-size: 17px;
+   color: #DBDBDB;
+   text-decoration: none;
+}
+.SingUp:hover{
+   color: rgb(44, 44, 77);
+}
+.button{
+   width: 100%;
+   height: 100%;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   background-color: #DBDBDB;
+   outline: none;
+   border: 0px;
+}
+.lower-div{
+   background-color: blanchedalmond;
+   height: 45px;
+   width: 85%;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+}
+form{
+   width: 100%;
+   height: 100%;
+}
+@media(max-width:800px){
+   .main_form_div {
+      width: 80%;
+   }
+   .inputsection{
+      height: 40px;
+   }  
+   .password-icon{
+      height: 40px;
+   }
+   .email-icon{
+      
+      height: 40px;
+      
+   }
+}
+@media(max-width:1200px) and (min-height:801px){
+   .main_form_div {
+      width: 70%;
+      height: 35%;
+   }
+   .inputsection{
+      height: 40px;
+   }  
+   .password-icon{
+      height: 40px;
+   }
+   .email-icon{ 
+      height: 40px;
+   }
+   .forget-div{
+     
+      width: 50%;
+      
+   }
+}
+
+@media(max-width:440px){
+   .main_form_div {
+      width: 85%;
+   }
+   .inputsection{
+      height: 45px;
+   }  
+   .password-icon{
+      height: 45px;
+   }
+   .email-icon{
+      
+      height: 45px;
+      
+   }
+}
