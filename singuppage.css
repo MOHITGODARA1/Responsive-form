@@ -173,6 +173,8 @@ form{
 @media(min-width:340px) and (max-width:450px){
    .leftdiv{  
       width: 100%;
+      background: #EEAECA;
+      background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
    }
    .rightdiv{
       width: 0%;
