@@ -1,0 +1,203 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.container{
+   background-color: rgb(228, 228, 228);
+   height: 100vh;
+   width: 100vw;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.alldivs{
+   display: flex;
+   /* flex-direction: row; */
+   width: 80%;
+   border-radius: 5px;
+   height: 80%;
+}
+.bothdiv{
+   border-radius: 5px;
+   display: flex;
+   flex-direction: row;
+   height: 100%;
+   width: 100%;
+   box-shadow: 8px 8px 15px black;
+}
+.leftdiv{
+   border-top-left-radius:5px;
+   border-bottom-left-radius:5px;
+   height: 100%;
+   background-color: azure;
+   width: 40%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.rightdiv{
+   border-top-right-radius:5px;
+   border-bottom-right-radius:5px;
+   height: 100%;
+   width: 60%;
+}
+.name-input{
+   margin-top: 15px;
+   width: 100%;
+   height: 7%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+form{
+   height: 100%;
+   width: 100%;
+   display: contents;
+}
+.name{
+   height: 100%;
+   width: 60%;
+   padding-left: 5px;
+   border-radius: 5px;
+   border: 1px solid black;
+   outline: none;
+}
+.icons{
+   height: 20px;
+   width: 20px;
+   margin-right: 5px;
+}
+.button{
+   margin-top: 10px;
+   height: 100%;
+   width: 60%;
+   border-radius: 5px;
+   border: 0px;
+   background: linear-gradient(to bottom right, rgba(65, 65, 229, 0.834), rgba(126, 126, 177, 0.834));
+   color: aliceblue;
+   cursor: pointer;
+   transition: all 0.4s linear;
+}
+.button:hover{
+   background-color: rgba(126, 126, 177, 0.834);
+}
+.check{
+   margin-right: 6px;
+}
+.ter{
+   font-size: 15px;
+}
+.link{
+   text-decoration: none;
+
+}
+.allimage,.or{
+   margin-top: 10px;
+   display: flex;
+   width: 100%;
+   justify-content: center;
+   flex-direction: row;
+   gap: 20px;
+}
+.image{
+   height: 30px;
+   width: 30px;
+}
+.image-section{
+   height: 100%;
+   width: 100%;
+   border-top-right-radius:5px;
+   border-bottom-right-radius:5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: azure;
+}
+.singupimage{
+   height: 95%;
+   width: 86%;
+}
+@media (min-width:900px) and (max-width:1000px){
+   .leftdiv{  
+      width: 50%;
+   }
+   .rightdiv{
+      width: 50%;
+   }
+   .singupimage{
+      height: 80%;
+      width: 100%;
+   }
+   .name{
+      width: 65%;
+   }
+   .button{
+      width: 65%;
+   }
+   .alldivs{
+      width: 95%;
+      height: 80%;
+   }
+   .name-input{
+      height: 5%;
+   }
+}
+@media (min-width:700px) and (max-width:900px){
+   .leftdiv{  
+      width: 50%;
+   }
+   .name-input{
+      height: 5%;
+      
+   }
+   .rightdiv{
+      width: 50%;
+   }
+   .singupimage{
+      height: 70%;
+      width: 100%;
+   }
+   .name{
+      width: 70%;
+   }
+   .button{
+      width: 70%;
+   }
+   .alldivs{
+      width: 95%;
+      height: 80%;
+   }
+}
+@media(min-width:340px) and (max-width:450px){
+   .leftdiv{  
+      width: 100%;
+   }
+   .rightdiv{
+      width: 0%;
+      height: 0%;
+   }
+   .singupimage{
+      height: 75%;
+      width: 100%;
+   }
+   .name{
+      width: 70%;
+   }
+   .button{
+      width: 70%;
+   }
+   .bothdiv{
+      
+      flex-direction: column;
+   }
+   .image-section {
+      display: none; 
+   }
+   .alldivs{
+      width: 90%;
+      height: 75%;
+   }
+   
+}
