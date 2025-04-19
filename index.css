@@ -171,3 +171,37 @@ form{
       height: 10%;
    }
 }
+@media(min-width:380px) and (max-width:450px){
+   .emailsection{
+      height: 8%;
+     
+   }
+   .email,.password,.button{
+      width: 80%;
+     
+   }
+   .singup-button{
+      width: 80%;
+      
+   }
+   .notaccount{
+      height: 10%;
+   }
+   .both-section{
+      box-shadow: none;   
+      flex-direction: column-reverse;
+   }
+   .left-section{
+      background-color: rgb(235, 246, 246);
+      display: flex;
+      height: 100%;
+      width: 100%;
+   }
+   .right-section{
+      display: flex;
+      background-color: rgb(64, 88, 88);
+      background: linear-gradient(to bottom right, rgb(64, 88, 88), rgb(183, 203, 203));
+      height: 100%;
+      width: 100%;
+   }
+}
