@@ -173,7 +173,7 @@ form{
 }
 @media(min-width:380px) and (max-width:450px){
    .emailsection{
-      height: 8%;
+      height: 9%;
      
    }
    .email,.password,.button{
@@ -189,7 +189,7 @@ form{
    }
    .both-section{
       box-shadow: none;   
-      flex-direction: column-reverse;
+      flex-direction: column;
    }
    .left-section{
       background-color: rgb(235, 246, 246);
