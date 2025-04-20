@@ -1,0 +1,215 @@
+*{
+   margin: 0;padding: 0;
+
+}
+.container-of-navbar{
+   background-color: #4a5759;
+   display: flex;
+   height: 60px;
+}
+.alldives{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+.navbar-section{
+   display: flex;
+   align-items: center;
+   justify-content: end;
+   width: 70%;
+}
+nav{
+   width: 60%;
+   height: 50%;
+   display: flex;
+   justify-content: end;
+}
+.home{
+   margin-right: 20px;
+   text-decoration: none;
+   font-size: 21px;
+   color: white;
+}
+.companylogo{
+   /* margin-left: 15px; */
+   display: flex;
+   width: 30%;
+   justify-content: center;
+   align-items: center;
+}
+.logo-section{
+   color: white;
+}
+.Login{
+   margin-right: 10px;
+   height: 100%;
+   width: 20%;
+   margin-left: 10px;
+   border-radius: 50px;
+   border: 0px;
+   cursor: pointer;
+   background-color: #DEDBD2;
+}
+.login{
+   background-color: #DEDBD2;
+   cursor: pointer;
+   margin-right: 50px;
+   height: 100%;
+   width: 20%;
+   margin-left: 10px;
+   border-radius: 50px;
+   border: 0px;
+}
+/* Phone nav hidden by default */
+.phone-section {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: white;
+   z-index: 999;
+   display: none;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
+}
+
+.phone-section a, .phone-section button {
+   margin: 10px 0;
+   font-size: 20px;
+   text-decoration: none;
+   color: #000;
+   background: none;
+   border: none;
+   cursor: pointer;
+}
+
+/* Hamburger button */
+.hamburger {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+}
+
+/* Close button */
+.close-btn {
+   position: absolute;
+   top: 20px;
+   right: 30px;
+   font-size: 30px;
+   cursor: pointer;
+}
+.image3{
+   height: 40%;
+}
+/* Responsive - Show hamburger on mobile */
+@media screen and (max-width: 768px) {
+   .navbar-section {
+      display: none;
+   }
+
+   .hamburger {
+      display: block;
+   }
+}
+
+@media(min-width:900px) and (max-width:1000px){
+   .Login{
+      margin-right: 10px;
+      height: 100%;
+      width: 15%;
+      margin-left: 10px;
+     
+   }
+   .login{
+      width: 15%;
+      margin-right: 30px;
+   }
+   .home{
+      margin-right: 15px;
+      font-size: 21px;
+   }
+   nav{
+      width: 100%;
+      height: 50%;
+   }
+}
+@media(min-width:1000px) and (max-width:1280px){
+   .Login{
+      margin-right: 10px;
+      height: 100%;
+      width: 15%;
+      margin-left: 10px;
+     
+   }
+   .login{
+      width: 15%;
+      margin-right: 30px;
+   }
+   .home{
+      margin-right: 15px;
+      font-size: 21px;
+   }
+   nav{
+      width: 100%;
+      height: 50%;
+   }
+}
+@media(min-width:800px) and (max-width:900px){
+   .Login{
+      margin-right: 10px;
+      height: 100%;
+      width: 15%;
+      margin-left: 10px;
+     
+   }
+   .login{
+      width: 15%;
+      margin-right: 30px;
+   }
+   .home{
+      margin-right: 15px;
+      font-size: 21px;
+   }
+   nav{
+      width: 100%;
+      height: 50%;
+   }
+}
+@media(min-width:340px) and (max-width:400px){
+   .Login{
+      /* margin-right: 10px;
+      height: 100%;
+      width: 15%;
+      margin-left: 10px; */
+      display: none;
+     
+   }
+   .login{
+      /* width: 15%;
+      margin-right: 30px; */
+      display: none;
+   }
+   .home{
+      /* margin-right: 15px;
+      font-size: 21px; */
+      display: none;
+   }
+   nav{
+      /* width: 100%;
+      height: 50%; */
+      display: none;
+   }
+   .companylogo{
+      /* margin-left: 15px; */
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      
+   }
+   
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="homepage.css">
+</head>
+<body>
+   <div class="container-of-navbar">
+      <div class="alldives">
+         <div class="companylogo">
+            <h1 class="logo-section">EduStream</h1>
+         </div>
+         <div class="hamburger" onclick="togglePhoneMenu()"><img src="interface.png" alt="some image" class="image3"></div>
+         <div class="navbar-section">
+            <nav>
+               <a href="#" class="home">Home</a>
+               <a href="#" class="home">Categories</a>
+               <a href="#" class="home">Courses</a>
+               <a href="#" class="home">about us</a>
+               <button class="Login" onclick="window.location.href='../formsection/index.html'">Login</button>
+               <button class="login" onclick="window.location.href='../formsection/singuppage.html'">Sing up</button>
+            </nav>
+         </div>
+      </div>
+      <div class="phone-section" id="phoneMenu">
+         <div class="close-btn" onclick="togglePhoneMenu()"><img src="x-button.png" alt="cross-section" class="cross-image"></div>
+         <nav class="phone-nav">
+            <a href="#">Home</a>
+            <a href="#">Categories</a>
+            <a href="#">Courses</a>
+            <a href="#">About Us</a>
+            <button onclick="window.location.href='../formsection/index.html'">Login</button>
+            <button onclick="window.location.href='../formsection/singuppage.html'">Sign up</button>
+         </nav>
+      </div>
+   </div>
+</body>
+</html>
