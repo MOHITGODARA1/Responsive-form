@@ -19,7 +19,7 @@
    width: 70%;
 }
 nav{
-   width: 60%;
+   width: 70%;
    height: 50%;
    display: flex;
    justify-content: end;
@@ -39,6 +39,7 @@ nav{
 }
 .logo-section{
    color: white;
+   margin-left: 5px;
 }
 .Login{
    margin-right: 10px;
@@ -60,62 +61,71 @@ nav{
    border-radius: 50px;
    border: 0px;
 }
-/* Phone nav hidden by default */
-.phone-section {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   background-color: white;
-   z-index: 999;
-   display: none;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   padding: 20px;
-}
-
-.phone-section a, .phone-section button {
-   margin: 10px 0;
-   font-size: 20px;
-   text-decoration: none;
-   color: #000;
-   background: none;
-   border: none;
-   cursor: pointer;
-}
-
-/* Hamburger button */
-.hamburger {
+.phone-section-image{
    display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: 18px;
+    width: 100%;
+    height: 100%;
+    justify-content: end;
+    margin-right: 9px;
+    visibility: hidden;
 }
-
-/* Close button */
-.close-btn {
-   position: absolute;
-   top: 20px;
-   right: 30px;
+.phone-section{
+   /* background-color: #DEDBD2; */
+   position:absolute;
+   display: flex;
+   justify-content: end;
+   width: 100vw;
+   height: 100vh;
+   visibility: hidden;
+   
+}
+.cross-section-image{
+   height: 10%;
+   width: 100%;
+   display: flex;
+   justify-content: end;
+}
+.crossbutton{
+   height: 51%;
+   width: 10%;
+   padding: 18px;
+}
+.inner-phone-section{
+   background-color: #4a5759;
+   height: 100%;
+   width: 100%;
+}
+.interfaceimage{
+   height: 10%;
+   width: 21%;
+}
+.nav-innersection{
+   /* background-color: aliceblue; */
+   height: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.home1{
+   text-decoration: none;
+}
+.navbar-phone-section{
+   display: flex;
+   flex-direction: column;
+}
+.inner-text{
    font-size: 30px;
-   cursor: pointer;
+   color: #b9bdbe;
+   
 }
-.image3{
-   height: 40%;
+.Login1{
+   background-color: #f0f4f5;
+   height: 55%;
+    width: 30%;
+    border-radius: 50px;
+    border: 0px;
 }
-/* Responsive - Show hamburger on mobile */
-@media screen and (max-width: 768px) {
-   .navbar-section {
-      display: none;
-   }
-
-   .hamburger {
-      display: block;
-   }
-}
-
 @media(min-width:900px) and (max-width:1000px){
    .Login{
       margin-right: 10px;
@@ -179,7 +189,7 @@ nav{
       height: 50%;
    }
 }
-@media(min-width:340px) and (max-width:400px){
+@media(min-width:340px) and (max-width:480px){
    .Login{
       /* margin-right: 10px;
       height: 100%;
@@ -201,7 +211,11 @@ nav{
    nav{
       /* width: 100%;
       height: 50%; */
+      width: 0%;
       display: none;
+   }
+   .navbar-section{
+      width: 0%;
    }
    .companylogo{
       /* margin-left: 15px; */
@@ -211,5 +225,57 @@ nav{
       align-items: center;
       
    }
+   .phone-section-image{
+      visibility: visible;
+   }
+   .interfaceimage{
+      height: 57%;
+      width: 23%;
+   }
    
+}
+@media(min-width:470px) and (max-width:700px){
+   .Login{
+      /* margin-right: 10px;
+      height: 100%;
+      width: 15%;
+      margin-left: 10px; */
+      display: none;
+     
+   }
+   .login{
+      /* width: 15%;
+      margin-right: 30px; */
+      display: none;
+   }
+   .home{
+      /* margin-right: 15px;
+      font-size: 21px; */
+      display: none;
+   }
+   nav{
+      /* width: 100%;
+      height: 50%; */
+      width: 0%;
+      display: none;
+   }
+   .navbar-section{
+      width: 0%;
+   }
+   .companylogo{
+      /* margin-left: 15px; */
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      
+   }
+   .phone-section-image{
+     
+      visibility: visible;
+   }
+   .interfaceimage{
+      height: 57%;
+      width: 10%;
+   }
 }
